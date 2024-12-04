@@ -14,6 +14,7 @@ use crossterm::{
 use std::io::{self, Result, Stderr, Write};
 use std::time::Instant;
 use timer::Timer;
+use crossterm::style::Stylize;
 
 pub fn stats_loop(silent: bool, stats_rx: Receiver<usize>) -> Result<()> {
     let mut total_bytes = 0;
